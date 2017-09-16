@@ -123,6 +123,7 @@
     <Compile Include="infrastructure.app\messaging\ReminderPackageMessage.cs" />
     <Compile Include="infrastructure.app\messaging\ShutdownMessage.cs" />
     <Compile Include="infrastructure.app\messaging\StartupMessage.cs" />
+    <Compile Include="infrastructure.app\registration\SecurityProtocol.cs" />
     <Compile Include="infrastructure.app\results\NuGetServiceGetClientResult.cs" />
     <Compile Include="infrastructure.app\results\PackageTestResult.cs" />
     <Compile Include="infrastructure.app\logging\ServiceNugetLogger.cs" />

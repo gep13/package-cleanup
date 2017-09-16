@@ -56,6 +56,7 @@ namespace chocolatey.package.cleanup.infrastructure.app.tasks
 
         private void update_website(FinalResultMessage message)
         {
+            SecurityProtocol.set_protocol();
             if (string.IsNullOrWhiteSpace(_configurationSettings.PackagesApiKey)) return;
 
             this.Log().Info(() => "Updating website for {0} v{1} with cleanup ({2}).".format_with(message.PackageId, message.PackageVersion, message.Reject ? "rejecting stale package" : "sending reminder"));
