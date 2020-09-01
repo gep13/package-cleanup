@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>chocolatey-package-cleanup-service</id>
+    <version>0.0.0.17</version>
+    <title>Chocolatey Package Cleanup Service (Install)</title>
+    <authors>Chocolatey Software, Inc</authors>
+    <owners>Chocolatey Software, Inc</owners>
+    <projectUrl>https://github.com/chocolatey/package-cleanup</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/chocolatey/choco/master/docs/logo/chocolateyicon.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Cleans up packages that are older and failing.
+
+Also cleans up waiting for maintainer packages that are not not going to be moved forward. This is done by providing a warning at 15 days and then automatically closing a package under review.
+
+### Package Parameters
+
+* `/Username:` - OPTIONAL - username the service will run under. If not specified LocalSystem will be used;
+* `/Password:` - OPTIONAL OR /EnterPassword - the password the service will run under. If a password is not provided a random one will be used;
+* `/EnterPassword` - OPTIONAL OR /Password - allows you to enter the password at package install. If a password is not provided a random one will be used;
+* `/DoNotStartService` - OPTIONAL - do not shut down and restart the service. You will need to restart the service manually or reboot;
+* `/DoNotReinstallService` - OPTIONAL - do not shut down or reinstall the service. You will need to install the service manually;</description>
+    <summary>Chocolatey Package Cleanup Service</summary>
+    <copyright>Copyright © 2017-2019 Chocolatey Software, Inc, © 2016 - 2017 RealDimensions Software, LLC - All Rights Reserved.</copyright>
+    <tags>chocolatey-package-cleanup admin</tags>
+    <dependencies>
+      <dependency id="chocolatey.extension" version="2.0.3" />
+      <dependency id="chocolatey-package-cleanup-config" version="1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="..\build_output\\chocolatey.package.cleanup\**\*" target="tools\files" exclude="**\package-cleanup.exe.config" />
+  </files>
+</package>
