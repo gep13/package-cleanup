@@ -30,6 +30,6 @@ Also cleans up waiting for maintainer packages that are not not going to be move
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="..\build_output\\chocolatey.package.cleanup\**\*" target="tools\files" exclude="**\package-cleanup.exe.config" />
+    <file src="..\_PublishedApplications\chocolatey.package.cleanup.host\**\*" target="tools\files" exclude="**\package-cleanup.exe.config" />
   </files>
 </package>
