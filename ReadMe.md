@@ -4,8 +4,6 @@ Cleans up packages that are older and failing.
 
 Also cleans up waiting for maintainer packages that are not not going to be moved forward. This is done by providing a warning at 15 days and then automatically closing a package under review.
 
-![Chocolatey Logo](https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif "Chocolatey")
-
 ## Chat Room
 
 Want quick feedback to your questions? [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chocolatey/choco?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
