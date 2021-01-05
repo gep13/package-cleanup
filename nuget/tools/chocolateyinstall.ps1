@@ -2,7 +2,7 @@
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $serviceExe = 'package-cleanup.exe'
-$destinationPath = Join-Path (Get-ToolsLocation) -ChildPath 'chocolatey-package-cleanup'
+$destinationPath = Join-Path (Get-ToolsLocation) -ChildPath 'cleanup'
 $configPath = Join-Path -Path $destinationPath -ChildPath 'package-cleanup.exe.config'
 
 $serviceParams = @{
